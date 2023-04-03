@@ -1,0 +1,38 @@
+.navV1X {
+    background-color: rgb(23, 23, 23);
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navV1X .imgX {
+    width: 100px;
+}
+
+.navV1X .wordX {
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: white;
+}
+
+.navV1X .categoriesX {
+    display: flex;
+    column-gap: 60px;
+}
+
+.navV1X .categoriesX .link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.navV1X .categoriesX .link:hover {
+    text-decoration: underline;
+    color:rgb(156, 255, 253);
+}

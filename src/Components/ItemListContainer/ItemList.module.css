@@ -1,0 +1,11 @@
+.itemListContainerV1 {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: #1d1d1d;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+    /* margin-bottom: 4rem; */
+    padding: 2.5rem 3rem;
+}

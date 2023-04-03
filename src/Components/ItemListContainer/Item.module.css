@@ -1,0 +1,79 @@
+.item-container {
+    border-radius: 1rem;
+    background-image: linear-gradient(0deg, #343434, #1c1c1c, #101010);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.item-container h2, .item-container h3 {
+    font-weight: normal;
+}
+
+.item-container h3 {
+    font-weight: 300;
+    font-size: 1.65rem;
+    font-family: 'montserrat';
+    color: rgb(156, 255, 253);
+    margin-right: 2.2rem;
+}
+
+.item-container h2 {
+    font-size: 1.8rem;
+    align-self: flex-start;
+    margin-left: 1.5rem;
+}
+
+.item-container p.description {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+    width: 300px;
+    height: 100px;
+    color: #959595
+}
+
+.item-container span {
+    font-family: 'montserrat';
+    margin-right: 3px;
+}
+
+.item-container img.product {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.item-container button.more-details {
+    font-size: .9rem;
+    padding: .6rem .7rem;
+    width: 120px;
+    border-radius: 1.05rem;
+    border: 0;
+
+    font-family: 'montserrat';
+
+    color: white;
+    background-image: linear-gradient(90deg, rgb(0, 196, 250), rgb(20, 207, 216));
+    font-variant: small-caps;
+
+    transition: box-shadow 100ms;
+}
+
+.item-container button.more-details:hover {
+    box-shadow: 2px 2px 6px rgb(52, 160, 255), -2px -2px 6px rgb(52, 177, 255);
+}
+
+.item-container button {
+    cursor: pointer;
+}
+
+.item-container .last-container {
+    margin: .4rem 0 .7rem 1.5rem;
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+}
