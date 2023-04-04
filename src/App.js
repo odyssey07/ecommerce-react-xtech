@@ -6,7 +6,7 @@ import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailCont
 
 import './index.css'
 import CartContextProvider from "./Context/CartContext";
-import Checkout from "./Components/Checkout/Checkout";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
 
                     <Route path='/category/:categoryId' element={<ItemListContainer />} />
 
-                    <Route path="/cart" element={<Checkout/>} />
+                    <Route path="/cart" element={<Cart/>} />
 
                     <Route path="*" element={<h1 style={{
                         fontFamily: "Segoe UI",

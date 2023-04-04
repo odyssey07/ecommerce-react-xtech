@@ -1,16 +1,28 @@
-import { useParams } from "react-router-dom";
-import { products } from '../../productsMock';
+import ItemDetail from "./ItemDetail";
 
-import styles from './ItemDetailContainer.module.css'
-import ItemCount from './ItemCount'
+import { useParams } from "react-router-dom";
 import { CartContext } from '../../Context/CartContext';
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
+
+import { database } from "../../firebase-config";
+import { collection, getDoc, doc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const {id} = useParams();
     const {addToCart} = useContext(CartContext)
+    const [selectedProduct, setSelectedProduct] = useState({})
 
-    const selectedProduct = products.find((element) => element.id === id*1);
+    useEffect(() => {
+        const itemCollection = collection(database, 'products');
+        const ref = doc(itemCollection, id);
+        getDoc(ref)
+            .then(res => {
+                setSelectedProduct({...res.data(), id: res.id})    
+            } 
+            )
+    }, [id])
+
+    console.log(selectedProduct)
 
     const onAdd = quantity => {
         addToCart({
@@ -19,18 +31,8 @@ const ItemDetailContainer = () => {
         })
     }
 
-    return (
-        <div className={styles.detailContainer}>
-            <img src={selectedProduct.image} alt="" />
-            <div className={styles.detailControls}>
-                <h3>{selectedProduct.brand}</h3>
-                <h2>{selectedProduct.name}</h2>
-                <p className={styles.detailDescription}>{selectedProduct.description}</p>
-                <p className={styles.price}><span>$ </span>{selectedProduct.price.toFixed(2)}</p>
-                <ItemCount stock={selectedProduct.stock} onAdd={onAdd}/>
-            </div>
-        </div>
-    )
+    if (!Object.keys(selectedProduct).length) return <h1>Cargando...</h1>
+    return (<ItemDetail selectedProduct={selectedProduct} onAdd={onAdd}/>)
 }
 
 export default ItemDetailContainer

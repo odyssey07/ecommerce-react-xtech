@@ -8,7 +8,7 @@ const Item = ({ element }) => {
         <div className={styles["item-container"]}>
             <img className={styles.product} src={element.image} alt="Not found" />
             <h2>{element.name}</h2>
-            <p className={styles.description}>{element.description}</p>
+            <p className={styles.brand}>{element.brand}</p>
             <div className={styles["last-container"]}>
                 <Link to={`/itemDetail/${element.id}`}>
                     <button className={styles["more-details"]}>Ver más</button>

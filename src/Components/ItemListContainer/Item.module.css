@@ -6,6 +6,7 @@
     align-items: center;
     color: white;
     padding: 10px;
+    /* height: 400px; */
 }
 
 .item-container h2, .item-container h3 {
@@ -26,12 +27,11 @@
     margin-left: 1.5rem;
 }
 
-.item-container p.description {
-    margin-left: 1.5rem;
-    margin-top: 1rem;
+.item-container p.brand {
+    margin: .6rem 0rem .9rem 1.5rem;
+    font-size: 1.3rem;
     align-self: flex-start;
     width: 300px;
-    height: 100px;
     color: #959595
 }
 
