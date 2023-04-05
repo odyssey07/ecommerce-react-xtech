@@ -1,0 +1,72 @@
+.success_container {
+    background-color: white;
+    height: 85vh;
+}
+
+.success_container .message{
+    height: 40%;
+    background-color: rgb(51, 192, 248);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success_container .message .img_container {
+    height: 120px;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: rgba(29, 120, 206, 0.293);
+    border-radius: 50%;
+}
+
+.success_container .message img {
+    height: 100%;
+}
+
+.success_container .message p {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.success_container .message p:nth-child(3) {
+    color: rgb(64, 64, 64)
+}
+
+.success_container .action {
+    height: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 6rem;
+}
+
+.success_container .action p {
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.success_container .action p:nth-child(2) {
+    font-weight: bold; 
+}
+
+.success_container .action p:nth-child(3) {
+    font-size: 1.8rem;
+}
+
+.success_container .action button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: rgb(51, 192, 248);
+    border: 0;
+    border-radius: 1rem;
+    transition: background-color 200ms linear;
+}
+
+.success_container .action button:hover {
+    background-color: rgb(84, 218, 238);
+}

@@ -1,0 +1,21 @@
+.empty_cart_container {
+    height: 85vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.empty_cart_container * {
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+.empty_cart_container h2 {font-size: 1.9rem; margin-top: 2rem}
+.empty_cart_container h3 {
+    font-size: 1.3rem; 
+    margin-top: 2rem;
+    color:rgb(128, 128, 128);
+    text-align: center;
+    width: 40%
+}
+.empty_cart_container img {width: 150px}

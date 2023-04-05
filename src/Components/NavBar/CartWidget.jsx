@@ -4,14 +4,13 @@ import { useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
 
 const CartWidget = () => {
-    const {cartItems} = useContext(CartContext);
-    console.log(cartItems)
+    const {getTotalItems} = useContext(CartContext);
 
     return (
         <div>
             <Button style={{ fontSize: "1.8rem" }} variant="Text"
                 startIcon={<ShoppingCartIcon style={{ fontSize: "50px" }} />}>
-                {cartItems.length}
+                {getTotalItems()}
             </Button>
         </div>
     );

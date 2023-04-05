@@ -28,7 +28,7 @@
 .detailContainer .detailControls .price {
     font-size: 3.5rem;
     margin-top: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .detailContainer .detailControls .detailDescription {
@@ -40,6 +40,12 @@
 
 .detailContainer button {
     cursor: pointer;
+}
+
+.detailContainer .stock {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color:rgb(187, 185, 185)
 }
 
 

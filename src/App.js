@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import ItemListContainer from "./Components/ItemList/ItemListContainer";
 import NavBar from "./Components/NavBar/NavBar"
-import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import ItemDetailContainer from "./Components/ItemDetail/ItemDetailContainer";
+import CartContextProvider from "./Context/CartContext";
+import CartContainer from "./Components/CartView/CartContainer";
 
 import './index.css'
-import CartContextProvider from "./Context/CartContext";
-import Cart from "./Components/Cart/Cart";
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
 
                     <Route path='/category/:categoryId' element={<ItemListContainer />} />
 
-                    <Route path="/cart" element={<Cart/>} />
+                    <Route path="/cart" element={<CartContainer/>} />
 
                     <Route path="*" element={<h1 style={{
                         fontFamily: "Segoe UI",

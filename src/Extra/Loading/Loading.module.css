@@ -1,0 +1,10 @@
+.loading_container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.clip_loader {
+    margin-bottom: 12rem;
+}
