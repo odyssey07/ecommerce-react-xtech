@@ -17,6 +17,12 @@ const Checkout = ({ handleSubmit, userData, setUserData }) => {
                     value={userData.email}
                     onChange={e => setUserData({ ...userData, email: e.target.value })} />
                 <input
+                    name="email2"
+                    type="text"
+                    placeholder="Confirmar email"
+                    value={userData.email2}
+                    onChange={e => setUserData({ ...userData, email2: e.target.value })} />
+                <input
                     name="phone"
                     type="text"
                     placeholder="Teléfono"

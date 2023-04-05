@@ -91,6 +91,17 @@ const CheckoutContainer = () => {
             return
         }
 
+        if (userData.email !== userData.email2) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: "Los e-mail no coinciden.",
+                showConfirmButton: false,
+                timer: 1500
+            })
+            return
+        }
+
         const order = {
             buyer: userData,
             imems: cartItems,
