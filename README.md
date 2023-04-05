@@ -4,8 +4,8 @@
 
 -------------
 ## Resumen
-Xtech es un negocio ficticio de dispositivos de electrónica de consumo. El proyecto está hecho fundamental con React pero estilizado "a mano" con CSS puro (con algunas excepciones).
-Respecto al enfoque, lo más importante sería destacar la estructuración del proyecto siguien el patrón de diseño de código: componente de lógico vs. componente presentacional.
+Xtech es un negocio ficticio de dispositivos de electrónica de consumo. El proyecto está hecho fundamentalmente con React y estilizado "a mano" con CSS puro (con algunas excepciones).
+Respecto al enfoque, lo más importante sería destacar la estructuración del proyecto siguiendo el patrón de diseño de código de componente encargado de lógica vs. componente presentacional.
 
 -------------
 ## Librerias del proyecto
