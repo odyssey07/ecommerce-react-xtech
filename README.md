@@ -1,5 +1,7 @@
 # Xtech | E-commerce de dispositivos electrónicos
 
+¡NO es responsive! Está pensada para una pantalla de 1920x1080 en dimensión máxima.
+
 !["logo del proyecto"](https://res.cloudinary.com/dews3zbls/image/upload/v1680655816/logos/x_fzojqx_dngdp6.png)
 
 -------------
